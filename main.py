@@ -1,4 +1,5 @@
 import numpy as np
+import math
 # tablice
 # a = np.array([0, 2, 7, 4])
 # print(a)
@@ -68,17 +69,34 @@ import numpy as np
 # print(a[3:])
 # print(a[2:5])
 # # zmiana rozmiaru - ilosc wierszy x ilosc kolumn = ilosc elementow
-mat = np.arange(25)
-print(mat)
-mat = mat.reshape((5, 5))
-print(mat)
-print(mat[1:])  # od drugiego wiersza
-print(mat[:, 1:2])   # tylko kolumna nr 1
-print(mat[:, -1])   # ostatnia kolumna
-print(mat[2:5, 1:3])  # 2 i 3 kolumna dla 3,4,5 wierszy
-print(mat[2, 4])  # 3 i 5 kolumna
-print(' ')
-x = np.array([[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, 10, 11]])
-print(x)
-rows = np.array([[0, 0], [3, 3]])
-cols = np.array([[0, 2],[0, 2]])
+# mat = np.arange(25)
+# print(mat)
+# mat = mat.reshape((5, 5))
+# print(mat)
+# print(mat[1:])  # od drugiego wiersza
+# print(mat[:, 1:2])   # tylko kolumna nr 1
+# print(mat[:, -1])   # ostatnia kolumna
+# print(mat[2:5, 1:3])  # 2 i 3 kolumna dla 3,4,5 wierszy
+# print(mat[2, 4])  # 3 i 5 kolumna
+# print(' ')
+# x = np.array([[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, 10, 11]])
+# print(x)
+# rows = np.array([[0, 0], [3, 3]])
+# cols = np.array([[0, 2],[0, 2]])
+# Zad1
+# a = np.arange(0, 4*20, 4)
+# print(a)
+# Zad2
+# array = np.array([2.124, 3.50, 4.20])
+# listb = array.astype('int32')
+# print(listb[1]*listb[2])
+# Zad3
+b=3**2
+print(b)
+def funkcjon(n):
+    a = np.empty((n*n))
+    a[0] = 1
+    for i in range(1, n*n):
+        a[i]=2**i
+    print(a)
+funkcjon(5)
