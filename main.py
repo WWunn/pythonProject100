@@ -78,3 +78,7 @@ print(mat[:, -1])   # ostatnia kolumna
 print(mat[2:5, 1:3])  # 2 i 3 kolumna dla 3,4,5 wierszy
 print(mat[2, 4])  # 3 i 5 kolumna
 print(' ')
+x = np.array([[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, 10, 11]])
+print(x)
+rows = np.array([[0, 0], [3, 3]])
+cols = np.array([[0, 2],[0, 2]])
