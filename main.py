@@ -100,3 +100,4 @@ def funkcjon(n):
         a[i]=2**i
     print(a)
 funkcjon(5)
+#
